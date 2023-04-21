@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import GamePage from './pages/GamePage/ProductsPage';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
+import GamePage from "./pages/GamePage";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ProductsPage from './ProductsPage';
+import Index from './index';
 
 test('renders learn react link', () => {
-  render(<ProductsPage />);
+  render(<Index />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
@@ -11,7 +11,7 @@ test('renders learn react link', () => {
 // import React from "react";
 // import { render, waitFor } from "@testing-library/react";
 // import { Product, Article, Sale, RawArticle } from "../../common/types";
-// import GamePage from "./GamePage";
+// import Index from "./Index";
 // import * as ProductService from "../../services/ProductService";
 // import * as SaleService from "../../services/SaleService";
 // import * as ArticleService from "../../services/ArticleService";
@@ -83,7 +83,7 @@ test('renders learn react link', () => {
 // const mockedGetSales = SaleService.getSales as jest.MockedFunction<typeof SaleService.getSales>;
 // const mockedUpdateArticles = ArticleService.updateArticles as jest.MockedFunction<typeof ArticleService.updateArticles>;
 //
-// describe("<GamePage />", () => {
+// describe("<Index />", () => {
 //   beforeEach(() => {
 //     mockedGetProducts.mockResolvedValue(products);
 //     mockedGetArticles.mockResolvedValue(articles);
@@ -96,7 +96,7 @@ test('renders learn react link', () => {
 //   });
 //
 //   it("should display products and articles", async () => {
-//     const { getByText } = render(<GamePage />);
+//     const { getByText } = render(<Index />);
 //
 //     await waitFor(() => {
 //       expect(getByText("Kallax Shelf")).toBeInTheDocument();
